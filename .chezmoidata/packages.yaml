@@ -8,6 +8,8 @@ packages:
     - ripgrep
     - btop
     - fastfetch
+    - lolcat
+    - figlet
   debian:
     - zsh
     - tmux
