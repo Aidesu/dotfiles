@@ -1,0 +1,10 @@
+packages:
+  dnf:
+    - zsh
+    - tmux
+    - kitty
+    - git
+    - fzf
+    - ripgrep
+    - btop
+    - fastfetch

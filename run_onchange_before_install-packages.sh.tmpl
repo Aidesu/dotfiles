@@ -1,0 +1,3 @@
+#!/bin/bash
+# Liste : {{ .packages.dnf | join " " }}
+sudo dnf install -y {{ range .packages.dnf }}{{ . | quote }} {{ end }}
