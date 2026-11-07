@@ -8,3 +8,7 @@ packages:
     - ripgrep
     - btop
     - fastfetch
+  debian:
+    - zsh
+    - tmux
+    - fzf

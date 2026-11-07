@@ -1,3 +1,11 @@
+
+{{ if eq .chezmoi.osRelease.id "fedora" -}}
 #!/bin/bash
-# Liste : {{ .packages.dnf | join " " }}
-sudo dnf install -y {{ range .packages.dnf }}{{ . | quote }} {{ end }}
+# Liste : {{ .packages.fedora | join " " }}
+sudo dnf install -y {{ range .packages.fedora }}{{ . | quote }} {{ end }}
+{{ else if eq .chezmoi.osRelease.id "debian" -}}
+#!/bin/bash
+# Liste : {{ .packages.debian | join " " }}
+sudo apt-get update
+sudo apt-get install -y {{ range .packages.debian }}{{ . | quote }} {{ end }}
+{{ end -}}
