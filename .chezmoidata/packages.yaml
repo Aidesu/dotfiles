@@ -4,7 +4,6 @@ packages:
     - tmux
     - kitty
     - git
-    - fzf
     - ripgrep
     - btop
     - fastfetch
@@ -13,4 +12,5 @@ packages:
   debian:
     - zsh
     - tmux
-    - fzf
+    - lolcat
+    - figlet
